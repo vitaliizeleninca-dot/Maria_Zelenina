@@ -6,7 +6,7 @@ import img4 from '../assets/4.jpg';
 import img5 from '../assets/7.jpg';
 
 // Массив в нужном порядке
-const images = [img1, img2, img3, img4, img5, img6];
+const images = [img1, img2, img3, img4, img5];
 
 const PhotoGallery = () => {
   return (
