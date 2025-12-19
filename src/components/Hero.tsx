@@ -54,7 +54,7 @@ const Hero = () => {
             <img 
               src="https://images.unsplash.com/photo-1759694430835-ef9350656e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTAxMTZ8MHwxfHNlYXJjaHwxfHxyaHl0aG1pYyUyMGd5bW5hc3RpY3MlMjBob29wJTIwZ2lybHxlbnwwfHx8fDE3NjYxNjI3MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" 
               alt="Rhythmic Gymnast with Hoop" 
-              className="w-full h-[600px] object-cover"
+              className="w-full h-auto max-h-[600px] object-cover"
             />
             
             {/* Overlay Gradient */}
