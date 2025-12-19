@@ -7,7 +7,7 @@ import img5 from '../assets/6.jpg';
 import img6 from '../assets/7.jpg'; // добавляй новые изображения сюда
 
 // Массив в нужном порядке
-const images: string[] = [img1, img3, img5, img2, img6, img4];
+const images: string[] = [img1, img2, img3, img4, img5, img6];
 
 const PhotoGallery = () => {
   return (
@@ -22,8 +22,8 @@ const PhotoGallery = () => {
           </p>
         </div>
 
-        {/* Используем CSS Grid вместо columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Фиксированная сетка 3x2 с одинаковой высотой */}
+        <div className="grid grid-cols-3 gap-8 auto-rows-[300px]">
           {images.map((src, index) => (
             <div
               key={index}
@@ -32,7 +32,7 @@ const PhotoGallery = () => {
               <img
                 src={src}
                 alt={`Gallery image ${index + 1}`}
-                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
             </div>
