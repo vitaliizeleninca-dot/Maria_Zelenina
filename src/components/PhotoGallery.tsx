@@ -3,10 +3,11 @@ import img1 from '../assets/1.jpg';
 import img2 from '../assets/2.jpg';
 import img3 from '../assets/3.jpg';
 import img4 from '../assets/4.jpg';
-import img5 from '../assets/7.jpg';
+import img5 from '../assets/6.jpg';
+import img6 from '../assets/7.jpg'; // добавляй новые изображения сюда
 
 // Массив в нужном порядке
-const images = [img1, img2, img5, img3, img4];
+const images: string[] = [img1, img3, img5, img2, img6, img4];
 
 const PhotoGallery = () => {
   return (
@@ -21,11 +22,12 @@ const PhotoGallery = () => {
           </p>
         </div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+        {/* Используем CSS Grid вместо columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map((src, index) => (
             <div
               key={index}
-              className="break-inside-avoid rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group"
+              className="rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group"
             >
               <img
                 src={src}
