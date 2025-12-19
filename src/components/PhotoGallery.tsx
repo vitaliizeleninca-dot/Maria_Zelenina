@@ -2,12 +2,12 @@ import React from 'react';
 
 // Массив ссылок на картинки в нужном порядке
 const images: string[] = [
-  "https://www.instagram.com/p/DSW7C84ApuC/",
-  "https://www.instagram.com/p/DSW7C84ApuC",
-  "https://www.instagram.com/p/DSW7C84ApuC/=1080",
-  "https://www.instagram.com/p/DSW7C84ApuC=1080",
-  "https://www.instagram.com/p/DSW7C84ApuC/",
-  "https://www.instagram.com/p/DSW7C84ApuC/"
+  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
+  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
+  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
+  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS=1080",
+  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
+  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS"
 ];
 
 const PhotoGallery = () => {
