@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { Play, Image as ImageIcon } from "lucide-react";
 import heroImage from "../assets/123.jpg";
@@ -21,7 +22,7 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 max-w-xl leading-relaxed font-sans">
             A journey into the world of beauty, grace, and first sports achievements.
             Every step is confidence, every training is joy.
           </p>
@@ -50,17 +51,17 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative"
+          className="relative w-full"
         >
           {/* glow */}
           <div className="absolute -top-10 -right-10 w-64 h-64 bg-gold/20 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-pink/20 rounded-full blur-3xl"></div>
 
-          <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border border-white/60">
+          <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border border-white/60 w-full h-[500px] md:h-[600px] lg:h-[700px]">
             <img
               src={heroImage}
               alt="Rhythmic gymnast"
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-lavender/30 to-transparent" />
           </div>
