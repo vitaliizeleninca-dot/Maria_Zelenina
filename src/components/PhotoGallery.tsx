@@ -4,7 +4,6 @@ import img2 from '../assets/2.jpg';
 import img3 from '../assets/3.jpg';
 import img4 from '../assets/4.jpg';
 import img5 from '../assets/7.jpg';
-import img6 from
 
 // Массив в нужном порядке
 const images = [img1, img2, img3, img4, img5, img6];
