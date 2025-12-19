@@ -1,13 +1,10 @@
 import React from 'react';
-import moment1 from '../assets/1.jpg';
-import moment2 from '../assets/2.jpg';
-import moment3 from '../assets/3.jpg';
-import moment4 from '../assets/4.jpg';
-import moment5 from '../assets/7.jpg';
+
+// Импортируем все jpg-файлы из папки assets
+const imagesModules = import.meta.glob('../assets/*.jpg', { eager: true });
+const images: string[] = Object.values(imagesModules).map((mod: any) => mod.default);
 
 const PhotoGallery = () => {
-  const images = [moment1, moment2, moment3, moment4, moment5, moment6];
-
   return (
     <section id="gallery" className="py-20 bg-cream/50">
       <div className="container mx-auto px-6">
@@ -19,13 +16,16 @@ const PhotoGallery = () => {
             Photos from trainings and first competitions, where the magic of rhythmic gymnastics is born.
           </p>
         </div>
-        
+
         <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
           {images.map((src, index) => (
-            <div key={index} className="break-inside-avoid rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
-              <img 
-                src={src} 
-                alt={`Gallery image ${index + 1}`} 
+            <div
+              key={index}
+              className="break-inside-avoid rounded-[2rem] overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group"
+            >
+              <img
+                src={src}
+                alt={`Gallery image ${index + 1}`}
                 className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
