@@ -1,13 +1,14 @@
 import React from 'react';
-import moment1 from '../assets/7.jpg';
-import moment2 from '../assets/6.jpg';
-import moment3 from '../assets/4.jpg';
-import moment4 from '../assets/3.jpg';
-import moment5 from '../assets/2.jpg';
-import moment6 from '../assets/1.jpg';
 
-// Массив в том порядке, в котором хочешь показывать
-const images = [moment3, moment1, moment5, moment2, moment6, moment4];
+// Массив ссылок на картинки в нужном порядке
+const images: string[] = [
+  "https://www.instagram.com/p/DSW7C84ApuC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  "https://www.instagram.com/p/DSW7C84ApuC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  "https://www.instagram.com/p/DSW7C84ApuC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==1080",
+  "https://www.instagram.com/p/DSW7C84ApuC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=1080",
+  "https://www.instagram.com/p/DSW7C84ApuC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  "https://www.instagram.com/p/DSW7C84ApuC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+];
 
 const PhotoGallery = () => {
   return (
