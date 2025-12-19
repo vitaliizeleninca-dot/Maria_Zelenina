@@ -1,10 +1,9 @@
 import React from 'react';
-import moment1 from '../assets/moment1.jpg';
-import moment2 from '../assets/moment2.jpg';
-import moment3 from '../assets/moment3.jpg';
-import moment4 from '../assets/moment4.jpg';
-import moment5 from '../assets/moment5.jpg';
-import moment6 from '../assets/moment6.jpg';
+import moment1 from '../assets/1.jpg';
+import moment2 from '../assets/2.jpg';
+import moment3 from '../assets/3.jpg';
+import moment4 from '../assets/4.jpg';
+import moment5 from '../assets/7.jpg';
 
 const PhotoGallery = () => {
   const images = [moment1, moment2, moment3, moment4, moment5, moment6];
