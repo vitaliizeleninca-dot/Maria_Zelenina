@@ -1,9 +1,10 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Play, Image as ImageIcon } from "lucide-react";
-import heroImage from "../assets/123.jpg";
 
 const Hero = () => {
+  // используем публичный URL вместо локального изображения
+  const heroImageUrl = "https://images.unsplash.com/photo-1759694430835-ef9350656e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080";
+
   return (
     <section className="relative min-h-screen pt-24 bg-gradient-to-br from-pink-light via-cream to-blue-pastel overflow-hidden">
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -57,11 +58,11 @@ const Hero = () => {
           <div className="absolute -top-10 -right-10 w-64 h-64 bg-gold/20 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-pink/20 rounded-full blur-3xl"></div>
 
-          <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border border-white/60 w-full h-[500px] md:h-[600px] lg:h-[700px]">
+          <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border border-white/60 w-full h-auto">
             <img
-              src={heroImage}
+              src={heroImageUrl}
               alt="Rhythmic gymnast"
-              className="w-full h-full object-cover"
+              className="w-full h-full max-h-[700px] object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-lavender/30 to-transparent" />
           </div>
