@@ -5,7 +5,7 @@ const images: string[] = [
   "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
   "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
   "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
-  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS=1080",
+  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
   "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
   "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS"
 ];
