@@ -1,14 +1,13 @@
 import React from 'react';
+import img1 from '../assets/1.jpg';
+import img2 from '../assets/2.jpg';
+import img3 from '../assets/3.jpg';
+import img4 from '../assets/4.jpg';
+import img5 from '../assets/6.jpg';
+import img6 from '../assets/7.jpg';
 
-// Массив ссылок на картинки в нужном порядке
-const images: string[] = [
-  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
-  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
-  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
-  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
-  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS",
-  "https://drive.google.com/uc?export=view&id=1W2ATtQ62JqGL24VUTsYxKl8PYCcrDNhS"
-];
+// Массив в нужном порядке
+const images = [img1, img2, img3, img4, img5, img6];
 
 const PhotoGallery = () => {
   return (
@@ -33,6 +32,7 @@ const PhotoGallery = () => {
                 src={src}
                 alt={`Gallery image ${index + 1}`}
                 className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+                loading="lazy"
               />
             </div>
           ))}
