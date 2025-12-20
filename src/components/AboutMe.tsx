@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // 👉 импорт ОДНОГО фото
-import aboutImg from '../assets/5.png';
+import aboutImg from '../assets/5.jpg';
 
 const AboutMe: React.FC = () => {
   return (
