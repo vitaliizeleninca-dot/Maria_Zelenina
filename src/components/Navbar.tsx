@@ -29,7 +29,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="text-2xl font-serif font-bold text-lavender">
-          MARIA<span className="text-pink">ZELENINA</span>
+          MARIA<span className="text-pink"> ZELENINA</span>
         </a>
 
         {/* Desktop Menu */}
