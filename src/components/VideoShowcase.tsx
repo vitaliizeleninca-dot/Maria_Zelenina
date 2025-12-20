@@ -9,19 +9,19 @@ type VideoItem = {
 
 const videos: VideoItem[] = [
   {
-    title: 'My first appearance on the big stage',
-    subtitle: '2025',
-    youtubeId: 'sMui14XvhjY',
+    title: 'Spring gymnastics celebration at Imatra Sports Hall',
+    subtitle: 'May 14, 2025',
+    youtubeId: 'POXdfZ31zUY',
   },
   {
-    title: 'Hoop Dance',
-    subtitle: 'Little Star',
-    youtubeId: 'sMui14XvhjY',
+    title: 'Performance at Imatra Sports Hall. Magic on the carpet',
+    subtitle: 'Nov 15, 2025',
+    youtubeId: '3OXXKFT8pKE',
   },
   {
-    title: 'Open Lesson',
-    subtitle: 'First Successes',
-    youtubeId: 'sMui14XvhjY',
+    title: 'Christmas Show. Gymnastics Celebration. Imatra Sports Hall',
+    subtitle: 'Dec 17, 2025',
+    youtubeId: 'C8kZVAcxbZM',
   },
 ];
 
