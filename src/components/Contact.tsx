@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { Mail, Instagram } from "lucide-react";
 
 const Contact = () => {
@@ -7,15 +7,17 @@ const Contact = () => {
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-
     if (!formRef.current) return;
+
+    const now = new Date().toLocaleString(); // текущая дата и время
 
     emailjs
       .sendForm(
         "service_el6e74s",      // SERVICE_ID
         "template_bqfsotw",     // TEMPLATE_ID
         formRef.current,
-        "5-HJEQckI23BXW99T"     // PUBLIC_KEY
+        "5-HJEQckI23BXW99T",    // PUBLIC_KEY
+        { time: now }            // поле {{time}} для шаблона
       )
       .then(
         () => {
