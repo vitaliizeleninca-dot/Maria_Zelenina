@@ -37,7 +37,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">Instagram</h3>
-                  <p className="text-white/80">@elenarose_gym</p>
+                  <p className="text-white/80">@maryaurum</p>
                 </div>
               </div>
             </div>
