@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Play, Image as ImageIcon } from "lucide-react";
+import { Play } from "lucide-react";
 
 const Hero = () => {
   // 👉 YouTube ID (из https://youtu.be/sMui14XvhjY)
@@ -41,36 +41,35 @@ const Hero = () => {
               href="#gallery"
               className="px-6 py-3 bg-white text-lavender border-2 border-lavender rounded-full font-semibold hover:bg-lavender hover:text-white transition flex items-center gap-2"
             >
-              <ImageIcon size={18} />
+              <img src="/src/assets/5.png" alt="Gallery icon" className="w-5 h-5 object-contain" />
               Gallery
             </a>
           </div>
         </motion.div>
 
         {/* VIDEO */}
-       <motion.div
-  initial={{ opacity: 0, scale: 0.95 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.6, delay: 0.2 }}
-  className="relative w-full"
->
-  {/* glow */}
-  <div className="absolute -top-10 -right-10 w-64 h-64 bg-gold/20 rounded-full blur-3xl"></div>
-  <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-pink/20 rounded-full blur-3xl"></div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="relative w-full"
+        >
+          {/* glow */}
+          <div className="absolute -top-10 -right-10 w-64 h-64 bg-gold/20 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-pink/20 rounded-full blur-3xl"></div>
 
-  <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border border-white/60 aspect-video bg-black">
-    <iframe
-      src="https://www.youtube.com/embed/sMui14XvhjY"
-      title="Hero performance video"
-      className="absolute inset-0 w-full h-full"
-      frameBorder="0"
-      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-lavender/30 to-transparent pointer-events-none" />
-  </div>
-</motion.div>
-
+          <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border border-white/60 aspect-video bg-black">
+            <iframe
+              src={`https://www.youtube.com/embed/${heroVideoId}`}
+              title="Hero performance video"
+              className="absolute inset-0 w-full h-full"
+              frameBorder="0"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-lavender/30 to-transparent pointer-events-none" />
+          </div>
+        </motion.div>
 
       </div>
     </section>
