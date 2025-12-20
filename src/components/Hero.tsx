@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Play, Image as ImageIcon } from "lucide-react";
 
 const Hero = () => {
-  // 👉 YouTube ID (из https://youtu.be/sMui14XvhjY)
-  const heroVideoId = "sMui14XvhjY";
+  // используем публичный URL вместо локального изображения
+  const heroImageUrl = "https://images.unsplash.com/photo-1759694430835-ef9350656e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080";
 
   return (
     <section className="relative min-h-screen pt-24 bg-gradient-to-br from-pink-light via-cream to-blue-pastel overflow-hidden">
@@ -47,7 +47,7 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* VIDEO */}
+        {/* IMAGE / VIDEO */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -58,9 +58,9 @@ const Hero = () => {
           <div className="absolute -top-10 -right-10 w-64 h-64 bg-gold/20 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-pink/20 rounded-full blur-3xl"></div>
 
-          <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border border-white/60 aspect-[9/16] bg-black">
+          <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border border-white/60 aspect-video bg-black">
             <iframe
-              src={`https://www.youtube.com/embed/${heroVideoId}`}
+              src="https://www.youtube.com/embed/sMui14XvhjY"
               title="Hero performance video"
               className="absolute inset-0 w-full h-full"
               frameBorder="0"
@@ -68,6 +68,16 @@ const Hero = () => {
               allowFullScreen
             />
             <div className="absolute inset-0 bg-gradient-to-t from-lavender/30 to-transparent pointer-events-none" />
+          </div>
+
+          {/* Hero Image под видео (можно оставить или убрать по желанию) */}
+          <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border border-white/60 mt-8">
+            <img
+              src={heroImageUrl}
+              alt="Rhythmic gymnast"
+              className="w-full h-full max-h-[700px] object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-lavender/30 to-transparent" />
           </div>
         </motion.div>
 
