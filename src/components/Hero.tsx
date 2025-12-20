@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
-import galleryIcon from "@/assets/5.png"; // 👈 ИМПОРТ КАРТИНКИ
+import galleryIcon from "../assets/5.png"; // ✅ БЕЗ alias
 
 const Hero = () => {
   // 👉 YouTube ID (из https://youtu.be/sMui14XvhjY)
