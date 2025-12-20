@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
+import galleryIcon from "@/assets/5.png"; // 👈 ИМПОРТ КАРТИНКИ
 
 const Hero = () => {
   // 👉 YouTube ID (из https://youtu.be/sMui14XvhjY)
@@ -29,6 +30,8 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
+
+            {/* WATCH */}
             <a
               href="#videos"
               className="px-6 py-3 bg-pink text-white rounded-full font-semibold shadow-lg hover:opacity-90 transition flex items-center gap-2"
@@ -37,13 +40,19 @@ const Hero = () => {
               Watch Performances
             </a>
 
+            {/* GALLERY */}
             <a
               href="#gallery"
               className="px-6 py-3 bg-white text-lavender border-2 border-lavender rounded-full font-semibold hover:bg-lavender hover:text-white transition flex items-center gap-2"
             >
-              <img src="/src/assets/5.png" alt="Gallery icon" className="w-5 h-5 object-contain" />
+              <img
+                src={galleryIcon}
+                alt="Gallery"
+                className="w-5 h-5 object-contain"
+              />
               Gallery
             </a>
+
           </div>
         </motion.div>
 
