@@ -4,7 +4,7 @@ import galleryIcon from "../assets/5.png"; // ✅ БЕЗ alias
 
 const Hero = () => {
   // 👉 YouTube ID (из https://youtu.be/sMui14XvhjY)
-  const heroVideoId = "sMui14XvhjY";
+  const heroVideoId = "OY_JjaHa9YY";
 
   return (
     <section className="relative min-h-screen pt-24 bg-gradient-to-br from-pink-light via-cream to-blue-pastel overflow-hidden">
